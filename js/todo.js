@@ -9,17 +9,27 @@ let toDos=[];
 function saveToDos(){
     localStorage.setItem("todos",JSON.stringify(toDos));
 }
+
+function deleteLi(){
+    const del = event.target.parentElement;
+    del.remove();
+    toDos = toDos.filter(item => item.id !=parseInt(del.id));
+    saveToDos();
+}
+
 function paintToDo(message){
     const li = document.createElement("li");
     li.id = message.id;
     const span = document.createElement("span");
     const btn = document.createElement("button");
+    btn.addEventListener("click", deleteLi);
     span.innerText = message.text;
     btn.innerText = "x";
     li.appendChild(span);
     li.appendChild(btn);
     list.appendChild(li);
 }
+
 function handleSubmit(event){
     event.preventDefault();
     const whatToDo = todoForm.value;

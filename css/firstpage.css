@@ -1,5 +1,5 @@
 img {
-  filter: brightness(60%);
+  filter: brightness(90%);
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -11,7 +11,7 @@ img {
   color: white;
   position: absolute;
   top: 13%;
-  left: 20px;
+  left: 60px;
   font-size: 30px;
 }
 .login-form {
@@ -22,7 +22,7 @@ img {
 .todo-list {
   position: absolute;
   top: 23%;
-  left: 20px;
+  left: 60px;
 }
 .first-form input {
   background: none;
