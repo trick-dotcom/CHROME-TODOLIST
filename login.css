@@ -1,0 +1,15 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+.login_user {
+  position: absolute;
+  top: 20%;
+}
+
+.hidden {
+  display: none;
+}
